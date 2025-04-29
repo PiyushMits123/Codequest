@@ -1,0 +1,93 @@
+/* Import Roboto Bold */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* ===== Sidebar Container ===== */
+.left-sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background: #2e2e2e;            /* dark charcoal */
+  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ===== Navigation ===== */
+.side-nav {
+  padding: 40px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ===== Section Label ===== */
+.side-nav-div > div > p {
+  margin: 0 0 8px 24px;
+  font-size: 0.75rem;
+  font-weight: 700;               /* bolder */
+  color: #bbbbbb;                 /* light gray */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== Link Buttons ===== */
+.nav-btnn {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+
+/* ===== Links ===== */
+.side-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 22px;
+  margin: 0 12px;
+  border-radius: 8px;
+  color: #e0e0e0;                 /* off-white */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;               /* bold */
+  transition: background 0.2s, color 0.2s;
+}
+
+.side-nav-links img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0.8);
+  transition: filter 0.2s;
+}
+
+/* ===== Hover State ===== */
+.side-nav-links:hover {
+  background: #444444;            /* medium charcoal */
+  color: #ff6b6b;                 /* coral accent */
+  font-weight: 900;               /* extra bold on hover */
+}
+.side-nav-links:hover img {
+  filter: brightness(1.2);
+}
+
+/* ===== Active Link ===== */
+.active {
+  background: #ff6b6b;            /* coral */
+  color: #2e2e2e;                 /* dark charcoal */
+  border-left: 4px solid #ff6b6b;
+  font-weight: 900;               /* extra bold for active */
+}
+.active img {
+  filter: brightness(1.2) hue-rotate(-10deg);
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 760px) {
+  .left-sidebar {
+    width: 60px;                 /* icons-only on mobile */
+  }
+  .side-nav-div > div > p { display: none; }
+  .side-nav-links {
+    justify-content: center;
+    padding: 12px 0;
+  }
+  .side-nav-links p { display: none; }
+}

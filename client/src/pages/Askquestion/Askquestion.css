@@ -1,0 +1,146 @@
+/* Base styling improvements */
+.ask-question {
+  min-height: 80vh;
+  background-color: #f1f2f3; /* Light Gray */
+}
+
+/* Inner Container */
+.ask-ques-container {
+  margin: auto;
+  padding: 0px 20px 20px 20px;
+  max-width: 1200px;
+}
+
+/* Header */
+.ask-ques-container h1 {
+  padding: 40px 0px 20px 0px; /* Reduced from 80px */
+  font-size: 32px;
+  font-weight: bold;
+  color: #222; /* Dark Gray */
+  border-bottom: 2px solid #009dff; /* Sky Blue */
+  width: fit-content;
+}
+
+/* Form Container */
+.ask-ques-container form .ask-form-container {
+  padding: 20px;
+  background-color: #ffffff; /* White background for form */
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05),
+              0 20px 48px rgba(0, 0, 0, 0.05),
+              0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+.ask-form-container label h4 {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.ask-form-container label p {
+  margin: 0;
+  font-size: 13px;
+  padding: 3px 0px;
+  color: #555; /* Medium Gray */
+}
+
+/* Inputs and Textareas */
+.ask-form-container label input,
+.ask-form-container label textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: calc(100% - 24px);
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.ask-form-container label input:focus,
+.ask-form-container label textarea:focus {
+  outline: none;
+  border-color: #009dff; /* Sky Blue */
+  box-shadow: 0 0 5px rgba(0, 157, 255, 0.5); /* Soft Shadow */
+}
+
+/* Submit Button */
+.review-btn {
+  margin: 40px 0px;
+  padding: 14px;
+  width: 100%;
+  background: linear-gradient(to right, #009dff, #00c6ff); /* Gradient Blue */
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 157, 255, 0.3); /* Soft Shadow */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.review-btn:hover {
+  background: linear-gradient(to right, #007ecc, #00a6cc); /* Darker Blue on Hover */
+  transform: translateY(-2px);
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .ask-ques-container {
+    padding: 0px 24px;
+  }
+
+  .ask-ques-container h1 {
+    font-size: 28px;
+    padding-top: 40px;
+  }
+
+  .ask-form-container label input,
+  .ask-form-container label textarea {
+    font-size: 14px;
+  }
+
+  .review-btn {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 760px) {
+  .ask-ques-container {
+    padding: 0px 16px;
+  }
+
+  .ask-ques-container h1 {
+    font-size: 24px;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: none;
+  }
+
+  .ask-form-container {
+    padding: 16px;
+  }
+
+  .ask-form-container label h4 {
+    font-size: 15px;
+  }
+
+  .ask-form-container label p {
+    font-size: 12px;
+  }
+
+  .ask-form-container label input,
+  .ask-form-container label textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .review-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}

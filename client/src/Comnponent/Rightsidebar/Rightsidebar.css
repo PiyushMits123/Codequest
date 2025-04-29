@@ -1,0 +1,79 @@
+.right-sidebar {
+  float: right;
+  width: 280px;
+  margin: 40px 0 15px 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #2c3e50;
+}
+
+.widget, .widget-tags {
+  margin-top: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.widget h4,
+.widget-tags h4 {
+  margin: 0;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(to right, #f2709c, #ff9472);
+  color: white;
+  border-bottom: 1px solid #ffb199;
+}
+
+.right-sidebar-div-1 {
+  background-color: #fffdfc;
+  padding: 18px 20px;
+  border-top: none;
+}
+
+.right-sidebar-div-2 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.right-sidebar-div-2 p {
+  padding-left: 12px;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.widget-tags-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 20px;
+  background-color: #f9f9f9;
+}
+
+.widget-tags-div p {
+  padding: 6px 14px;
+  background-color: #d1eaff;
+  color: #004b8d;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.widget-tags-div p:hover {
+  background-color: #88ccf1;
+  color: #002f5a;
+}
+
+@media screen and (max-width: 1020px) {
+  .right-sidebar {
+    display: none;
+  }
+}

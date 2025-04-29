@@ -1,0 +1,139 @@
+/* Tablet devices (width: 761px to 1024px) */
+/* —— Tablet devices (761px to 1024px) —— */
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .home-container-1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background: #fafafa;
+    transition: padding 0.3s ease, background 0.3s ease;
+  }
+
+  .home-container-2 {
+    width: 95%;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+  }
+}
+
+/* —— Mobile devices (760px and below) —— */
+@media screen and (max-width: 760px) {
+  .home-container-1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #f5f5f5;
+  }
+
+  .home-container-2 {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  /* Typography scaling */
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+    transition: font-size 0.3s ease;
+  }
+  h1, h2, h3 {
+    font-size: 1.2em;
+    transition: font-size 0.3s ease;
+  }
+
+  /* Responsive media */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  /* Stacked nav/buttons */
+  .nav, .nav-buttons, .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Animated sidebar collapse */
+  .sidebar {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Center important content */
+  .center-on-mobile {
+    text-align: center;
+  }
+}
+
+
+
+/* Tablet devices (width: 761px to 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .home-container-1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .home-container-2 {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/* Mobile devices (width: 760px and below) */
+@media screen and (max-width: 760px) {
+  .home-container-1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .home-container-2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-size: 90%;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Example: make nav or buttons stack vertically */
+  .nav,
+  .nav-buttons,
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Optional: hide or collapse sidebar if present */
+  .sidebar {
+    display: none;
+  }
+
+  /* Optional: center content on mobile */
+  .center-on-mobile {
+    text-align: center;
+  }
+}
