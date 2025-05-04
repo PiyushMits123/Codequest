@@ -32,7 +32,7 @@ const Userprofile = ({ slidein }) => {
             <Avatar backgroundColor="purple" color="white" fontSize="50px" px="40px" py="30px">
   {currentprofile?.profileImage ? (
     <img
-      src={`http://localhost:5000/${currentprofile.profileImage.replace('\\', '/')}`}
+      src={`https://codequest-quks.vercel.app/${currentprofile.profileImage.replace('\\', '/')}`}
       alt="Profile"
       style={{ width: '100%', height: '100%',  }}
     />
